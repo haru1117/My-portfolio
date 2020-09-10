@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <srcipt src="script.js"></srcipt>
+    <title>My portfolio</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="header_wrapper">
+                <!-- グローバルメニュー -->
+                <nav class="drawer_nav">
+                    <ul class="drawer_menu">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about_me">ABOUT ME</a></li>
+                        <li><a href="#skills">SKILLS</a></li>
+                        <li><a href="#works">WORKS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <h1>Welcome to My portfolio</h1>
+                <video id="video" playsinline autoplay loop muted>
+                    <source src="img/Computer.mp4" type="video/mp4">
+                </video>
+            </div>
+        </header>
+        <!-- プロフィール -->
+        <div id="about_me">
+            <div class="portfolio_box">
+                <div class="portfolio-right">
+                    <img src="img/profile_img.JPG" alt="プロフィール写真">
+                </div>
+                <div class="portfolio-left">
+                    <div class="portfolio-text">
+                        <div class="portfolio_title">
+                            <h2>About Me</h2>
+                        </div>
+                        <div class="text">
+                            <p>freehy0209</p>
+                            <p>現在は日々勉強しながら</p>
+                            <p>駆け出しエンジニアとして活動しています。 </p>
+                            <p>ブログにもプログラミングに関して発信しています！</p>
+                            <p>よかったら見て見てください！</p>
+                            <a href="https://livehappierlife.com/">→リブハピ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id ="skills">
+            <div class="title">Skills</div>
+            <div class="skill_box">
+                <div class="skill-item">
+                    <h3>HTML</h3>
+                    <img src="img/HTML.png" alt="HTML" class="skill_photo1">
+                    <div class="rating">
+                        <div class="rate1"></div>
+                    </div>
+                    <p>経験年数<br>1年半</p>
+                </div>
+                <div class="skill-item">
+                    <h3>CSS</h3>
+                    <img src="img/CSS3.png" alt="CSS" class="skill_photo2">
+                    <div class="rating">
+                        <div class="rate1"></div>
+                    </div>
+                    <p>経験年数<br>1年半</p>
+                </div>
+                <div class="skill-item">
+                    <h3>jQuery</h3>
+                    <img src="img/jquery.png" alt="jQuery" class="skill_photo3">
+                    <div class="rating">
+                        <div class="rate2"></div>
+                    </div>
+                    <p>経験年数<br>半年</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Javascript</h3>
+                    <img src="img/javascript.png" alt="Javascript" class="skill_photo4">
+                    <div class="rating">
+                        <div class="rate2"></div>
+                    </div>
+                    <p>経験年数<br>半年</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Wordpress</h3>
+                    <img src="img/Wordpress.png" alt="Wordpress" class="skill_photo5">
+                    <div class="rating">
+                        <div class="rate2"></div>
+                    </div>
+                    <p>経験年数<br>半年</p>
+                </div>
+            </div>
+        </div>
+        <div id="works">
+            <div class="title_works">Works</div>
+            <h2 class="subtitle_works">（Web制作）</h2>
+            <div class="container">
+                <div class="work_row">
+                    <div class="col">
+                        <a href="img/portfolio-1.png">
+                            <figure>
+                                <img src="img/portfolio-1.png" alt="宿泊施設①">
+                            </figure>
+                            <div class="caption">
+                                <p>宿泊施設①</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="img/portfolio-2.png">
+                            <figure>
+                                <img src="img/portfolio-2.png" alt="宿泊施設②">
+                            </figure>
+                            <div class="caption">
+                                <p>宿泊施設②</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="img/portfolio-3.png">
+                            <figure>
+                                <img src="img/portfolio-3.png" alt="プログラミングスクールのホームページ事例">
+                            </figure> 
+                            <div class="caption">
+                                <p>プログラミングスクールのホームページ事例</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h2 class="subtitle_works2">（模写）</h2>
+            <div class="work_row">
+                <div class="mosha_works">
+                    <div class="col">
+                        <a href="img/mosha_1.png">
+                            <figure>
+                                <img src="img/mosha_1.png">
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="mosha_works">
+                    <div class="col">
+                        <a href="img/mosha_2.png">
+                            <figure>
+                                <img src="img/mosha_2.png">
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="title">Contact</div>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeqo-XbNqDPhooVGLEcPVNsrKj3V-G9tdFFTgPwV92Mwh-7TQ/viewform?embedded=true" width="640" height="673" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+        </div>
+</body>
+
+</html>
