@@ -19,13 +19,28 @@ h1{
     font-size:50px;
     
 }
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+    h1 {
+        font-size:30px;
+        top:10%;
+        left:15%;
+        font-size:20px;
+    }
+}
 .drawer_nav{
     width:100%;
     padding:20px;
     background-color: rgba(0,0,0,0.80);
 }
+
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+    .drawer_nav {
+        display:none;
+    }
+}
 .drawer_menu{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin:0;
 }
@@ -57,18 +72,39 @@ h1{
 
 .portfolio_box{
     display:flex;
+    flex-wrap: wrap;
     padding:100px;
   
-
+}
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+    .portfolio_box{
+       padding:30px;
+       display:flex;
+        flex-wrap: wrap;
+        padding:100px;
+    }
 }
 .portfolio_title h2{
     margin:0;
     font-size:30px;
     padding-bottom:20px;
 }
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+    .portfolio_title h2{
+        font-size:20px;
+        padding-bottom:0;
+        text-align:center;
+    }
+}
 .text{
     padding-bottom:20px;
 
+}
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+    .text{
+        font-size:12px;
+        text-align:center;
+    }
 }
 .portfolio-right{
     text-align:center;
@@ -79,17 +115,37 @@ h1{
     height:50%;
     border-radius:55%;
 }
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+    .portfolio-right img{
+        height:20%;
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
 .portfolio-left{
-    width:50%;
     text-align: left;
 }
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+    .portfolio-left{
+        left: 50%;
+        right:50%;
+    }
+}
+
 #skills{
-    /*background:url(img/skill_background.jpg);*/
     background-color:#E8EAE9;
     background-size: cover;
     height:500px;
 
 }
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+    #skills{
+       height:700px;
+    }
+}
+
 .title{
     text-align: center;
     font-size:30px;
@@ -99,15 +155,33 @@ h1{
 }
 .skill_box{
     display:flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     text-align:center;
     margin:30px;
 
 }
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+    .skill_box{
+        margin:auto;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin:25px;
+        margin-top:0px;
+    }
+}
 .skill-item{
     flex:none;
     width:150px;
     height:150px;
+}
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+    .skill-item{
+        flex:none;
+        width:100px;
+        height:25%;
+    }
 }
 .skill_photo1{
     max-width:100%;
